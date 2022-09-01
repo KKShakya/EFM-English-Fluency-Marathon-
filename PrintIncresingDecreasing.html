@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recursion</title>
+</head>
+<body>
+  
+</body>
+</html>
+<script>
+  let n = 3;
+function printDecreasingIncreasing(n){
+
+  // base
+  if(n <= 0){
+    return;
+  }
+//line = 1
+  console.log(n);
+  //  call //line=2
+  printDecreasingIncreasing(n-1);
+ 
+  // line = 3
+  console.log(n);
+
+}
+// result : 3 2 1 1 2 3 for n =3;
+printDecreasingIncreasing(n);
+</script>
+<!-- https://drive.google.com/file/d/1ZFjzOFpaxm-QRnMkRmiopZpPXLOcPIop/view?usp=sharing -->
