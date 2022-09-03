@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Units</title>
+  <style>
+ /*
+ px em rem vh vw
+  NOte: just define parent or html element font-size to 10px this 
+  way you will be able to calulate the size of the each element while giving size
+ 1.  em => It takes size according to the parent element 
+    2.rem => It takes size according to whole page i.e html
+    3. 100vh => whole view height of browser
+    4. 100vw => whole view width of browser
+    5. use em when you want your font-size to be according to increase decrease of your parent
+    6.Max-width => the width cannot be greater than this
+    7. min-width=> the width cannot be smaller than this*/
+
+
+
+    /* if you give html a fix -size that may make imposiible resizing font as per their use
+    so use 1.6rem in body tag*/
+    html{
+      font-size: 10px;
+    }
+body{
+  text-align: center;
+  /* this here is font-size for whole page */
+  font-size: 1.6rem;
+}
+.container{
+/* parent for first and second elements*/
+/* try to cange width of container to see which element changes according to it. */
+/* width:50%; */
+border: 1px solid red;
+font-size: 10px;
+}
+.first{
+  /* this means (3)em*10px = 30px */
+  font-size: 3em;
+  /* this means (3)em*10px*(padding)em = 60px */
+  padding:2em;
+}
+.second{
+  
+  /* this means (3)rem*10px = 30px or 
+  It can be  16px*3em = 48px if you don't define your size in html tag*/
+font-size: 3rem;
+}
+
+.para{
+border:2px solid green;
+  /* this will give min-width of the three-whenever you resize the page */
+  width:min(700px,90%,100vw);
+  height:max(700px, 90%, 30vh);
+  margin:0 auto;
+}
+
+.content{
+  margin-top:1rem;
+  border: 3px solid blue;
+
+}
+.third{
+ border:3px dotted red;
+ width:fit-content;
+}
+
+.fourth{
+ border:3px dotted red;
+ /* It takes minimum width possible things to accomodate that content */
+ width:min-content;
+}
+.fifth{
+  /* It takes  maximum width things to accomodate that content */
+ border:3px dotted red;
+ width:max-content;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="first">I am an em content</h1>
+    <h1 class="second">I am an rem element </h1>
+  </div>
+  
+  <p class="para">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae, aliquid harum excepturi, laboriosam, in odio deserunt voluptas officiis reiciendis inventore explicabo omnis quis iste ipsum dicta eaque minus praesentium!
+    Harum deleniti voluptate at saepe, ducimus nesciunt delectus sunt quas cumque ipsum alias dicta libero illum laborum ea et mollitia consequuntur quam tempora accusamus quasi consectetur amet nihil repudiandae. Ipsa!
+    Quas labore incidunt aperiam culpa itaque, iure voluptas illo? Corporis dicta sequi at quidem omnis eius aliquid, est fugiat sapiente voluptates laudantium iure vel! Quasi dolorum eius rerum dicta fugit!
+    Animi quisquam suscipit maiores maxime voluptatem vero beatae possimus sunt debitis similique praesentium, tenetur iusto magni autem quod ipsam recusandae architecto? Et veniam similique odit fuga, nemo maiores ex dolorem!
+    Porro sit fugiat, quos aliquid excepturi consectetur neque explicabo nesciunt incidunt earum facere laborum facilis at amet minima sint sapiente, cum similique. Debitis similique sapiente temporibus aliquam id fuga vero!
+    Fugiat rerum temporibus, ipsa laudantium vero fugit recusandae ipsam earum. Explicabo voluptatem nesciunt officiis repudiandae in, odio saepe ipsa sint minus molestias. Ipsum molestiae, porro reiciendis dolorem quasi nihil voluptas?
+    Commodi, facere illo magnam perspiciatis vitae doloribus magni voluptatum nesciunt distinctio nam ipsum itaque. Architecto, non. Quasi itaque odio architecto asperiores nisi magnam, tempore, at quidem voluptatum ipsa corporis enim!
+    Omnis facere quos, tempora ipsum officia molestias dolore hic saepe, error ratione libero ab? Perspiciatis nulla sapiente consectetur, quam, vitae iusto quas blanditiis tempore praesentium reprehenderit, deleniti provident error atque.
+    Exercitationem impedit totam sint obcaecati, quia excepturi ipsum necessitatibus molestias sed accusamus, ea aperiam, quibusdam tempora expedita omnis autem! Quae nostrum voluptatum repellendus voluptatibus aperiam inventore aut voluptatem, iusto nulla!
+    Velit, ratione minima. Corrupti natus eligendi iste beatae facere non, soluta temporibus quod saepe facilis quisquam porro? Iusto odit aspernatur, cupiditate, exercitationem commodi obcaecati magnam, aliquam totam ducimus delectus molestiae!
+
+  </p>
+ 
+  <div class="content">
+    <p class="third">I am fit content</p>
+    <p class="fourth">I am min-content</p>
+    <p class="fifth">I am max-content</p>
+  </div>
+
+
+</body>
+</html>
