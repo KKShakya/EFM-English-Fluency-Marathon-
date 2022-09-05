@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destructuring</title>
+</head>
+<body>
+  
+</body>
+</html>
+<script>
+var arr = ["React","javascript","Java","Mozilla","Win32","Macintosh"];
+// const [ele1,ele2,ele3] = arr;
+// console.log(ele1,ele2,ele3);
+
+//////////////
+// swap
+console.log("\n"+"swap");
+var swap = ["tier1","tier2"];
+// let [t1,t2] = swap;
+// console.log(t1,t2);
+// let k = t1;
+// t1= t2;
+// t2 = k;
+// console.log(t1,t2);
+
+
+// swap with destructuring
+// let [t1,t2] = swap;
+// console.log(t1,t2);
+// [t1,t2] = [t2,t1];
+
+// console.log(t1,t2);
+
+// naming the destructureed element
+var obj = {
+  frontend: "React",
+  backend: "Node",
+  database: "MongoDB",
+}
+
+const {frontend,backend} = obj;
+console.log(frontend,backend);
+
+
+</script>
