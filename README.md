@@ -9,7 +9,7 @@ All the work is to make progression in explaining and improve English fluency.
 [Destructuring], video-4 => https://drive.google.com/file/d/1B9YvTOjDwKSRHlenm84wueO5xR2_O48j/view?usp=sharing
 [Merge Sort], video-5 => https://drive.google.com/file/d/1cJN1gaexxTKWY3HUVYEORrBrK7U3MFTb/view?usp=sharing
 [UseState-react], video-6 => https://drive.google.com/file/d/1AVc0rmXHowIwR8huDvn9PAikgFH_GZON/view?usp=sharing
-[Recursion], video-7 => 
+[Binary Seacrh], video-7 => https://drive.google.com/file/d/1l1_mA__xXpZ17BkypvwzudECclponM0o/view?usp=sharing
 [Recursion], video-8 => 
 [Recursion], video-9 => 
 [Recursion], video-10 => 
